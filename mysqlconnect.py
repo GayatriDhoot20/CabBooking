@@ -9,7 +9,7 @@ class Mysql:
 
             if mydb.is_connected():
                 Mysql.message="connected"
-                # print("connected")
+                print("connected")
                 return mydb
         except Exception as e:
             Mysql.message=e
@@ -17,7 +17,7 @@ class Mysql:
     def close_connection(self,connection):
         connection.close()
 
-Mysql.connect()
-print(Mysql.message)
+# Mysql.connect()
+# print(Mysql.message)
 
 
